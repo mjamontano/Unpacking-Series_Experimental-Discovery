@@ -1,4 +1,31 @@
-<style>
+
+    /* Style for the Scroll Up button */
+    .scroll-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: rgba(88, 178, 96, 1);
+        color: rgba(149, 218, 248, 1);
+        border: solid;
+        border-radius: 50%;
+        border-color: black;
+        padding: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        display: none; /* Initially hidden */
+        transition: opacity 0.3s;
+    }
+
+    .scroll-btn:hover {
+        background-color: rgba(149, 218, 248, 1);
+        color: rgba(88, 178, 96, 1);
+    }
+
+    /* Optional: Smooth scroll for the entire page */
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         background-color: #ffffff; /* Set your desired background color */
     }
@@ -19,8 +46,7 @@
     }
 
     tr:nth-child(even) {
-        background-color: #95daf8;
-        opacity: 90%;
+        background-color: rgba(154, 202, 236, 0.9);
     }
 
     tr:nth-child(odd) {
@@ -94,5 +120,3 @@
     .underline {
         text-decoration: underline;
     }
-
-</style>
